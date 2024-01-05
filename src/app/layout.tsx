@@ -15,7 +15,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const combinedClassName = cx(inter.className, "font-sans");
+  const combinedClassName = cx(inter.className, "font-sans", "bg-gray-50");
   return (
     <html lang="en">
       <>
