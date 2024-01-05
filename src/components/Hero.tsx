@@ -22,18 +22,22 @@ export const Hero = () => {
             <span className="text-yellow cursor-wait overline "> IAN!</span>
           </h1>
           <TextEffect />
-          <motion.h1
-            className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+          <motion.p
+            className="mb-10 mt-4 px-4  font-medium !leading-[1.5] "
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
             Art is my <span className="font-bold">passion</span>, and code is my
             canvas. With over 6 years of dedicated experience as a
-            <span className="font-bold"> fullstack developer</span>, I excel in
-            sculpting beautiful and dynamic web applications. React, Node, and
-            JavaScript are not just tools, but my mediums of choice, through
-            which I transform ideas into digital masterpieces.
-          </motion.h1>
+            <span className="font-bold"> fullstack developer</span>, I sculpting
+            beautiful and{" "}
+            <span className="font-bold">dynamic web applications.</span>{" "}
+            <span className="font-bold">ReactJs</span>,{" "}
+            <span className="font-bold">NodeJs</span>, and{" "}
+            <span className="font-bold">JavaScript</span> are the mediums of
+            which I transform ideas into digital{" "}
+            <span className="font-bold">masterpieces.</span>
+          </motion.p>
           <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
             <button className="px-[2rem] hover:bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-black via-slate-200 to-black transition-all duration-300 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2 border rounded-full">
               <a href="/documents/Ian-adera-cv.pdf" download>

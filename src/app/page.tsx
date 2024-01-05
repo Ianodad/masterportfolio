@@ -5,6 +5,8 @@ import React, { useEffect, useState } from "react";
 
 import { MobileNavbar } from "@/components/MobileNavbar";
 import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
+import { Services } from "@/components/Services";
 
 export default function Home() {
   const [nav, setNav] = useState(false);
@@ -16,6 +18,10 @@ export default function Home() {
       <Navbar openNav={openNav} />
       <MobileNavbar nav={nav} closeNav={closeNav} />
       <Hero />
+      <div className="relative z-[30]">
+        <About />
+        <Services />
+      </div>
     </main>
   );
 }
