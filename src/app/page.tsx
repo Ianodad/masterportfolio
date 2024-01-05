@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import { MobileNavbar } from "@/components/MobileNavbar";
 
 export default function Home() {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
   const openNav = () => setNav(true);
   const closeNav = () => setNav(false);
   return (

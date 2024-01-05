@@ -18,7 +18,9 @@ export const Navbar = ({ openNav }: Props) => {
         <div className="nav-link">Skills</div>
         <div className="nav-link">Experience</div>
         <div className="nav-link">Contact</div>
-        <Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-gray-300" />
+        <div onClick={openNav}>
+          <Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-gray-300" />
+        </div>
       </div>
     </div>
   );
