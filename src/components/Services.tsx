@@ -9,8 +9,8 @@ import React from "react";
 
 export const Services = () => {
   return (
-    <div className="bg-gradient-to-b from-slate-100 via-slate-300 to-slate-50 pt-[4rem] md:pt-[8rem] pb-[5rem]">
-      <p className="text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase">
+    <div className="bg-slate-50 pt-[4rem] md:pt-[8rem] pb-[5rem]">
+      <p className="text-center text-black text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase">
         My <span className="text-gray-400">Services</span>
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white">
