@@ -10,7 +10,7 @@ export const Navbar = ({ openNav }: Props) => {
       <div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
         <h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">
           IAN
-          <span className="text-yellow-300">ADERA</span>
+          <span className="text-cm-red-500">ADERA</span>
         </h1>
         <div className="nav-link">Home</div>
         <div className="nav-link">About</div>

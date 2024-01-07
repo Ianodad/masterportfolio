@@ -10,11 +10,11 @@ export const About = () => {
             About Me
           </h1>
           <h2 className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize mb-[3rem] font-bold text-black">
-            Transforming <span className="text-black">Visions</span>
+            Transforming <span className="text-cm-red-500">Visions</span>
           </h2>
           <div className="mb-[3rem] flex items-center md:space-x-10">
-            <span className="w-[100px] hidden md:block h-[5px] bg-slate-500 rounded-sm"></span>
-            <p className="text-[19px] text-slate-300 w-[80%]">
+            <span className="w-[100px] hidden md:block h-[5px] bg-black rounded-sm"></span>
+            <p className="text-[19px] text-black w-[80%]">
               Transitioning from vision to web development involves translating
               conceptual ideas into tangible digital experiences. This process
               integrates design elements, user interfaces, and functionality to
@@ -23,22 +23,15 @@ export const About = () => {
               delivering a seamless and interactive online presence
             </p>
           </div>
-          <button className="px-[2rem] hover:bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-black via-slate-200 to-black transition-all duration-300 py-[1rem] text-[18px] font-bold uppercase bg-[#fff] text-black flex items-center space-x-2 border rounded-full">
-            <a href="https://roadmap.sh/">
-              <p>Check For Road Map</p>
-            </a>
-          </button>
         </div>
-        <div
-          data-aos="zoom-in"
-          className="w-[500px] hidden bg-[#55e6a5] relative lg:flex items-center rounded-full h-[500px]"
-        >
+        <div className="lg:w-[500px] mx-auto md:mx-0 mt-[2em] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative rounded-[50%/60%_60%_40%_40%]">
           <Image
             src="/images/aboutt.png"
             alt="user"
             layout="fill"
-            className="object-cover rounded-full bg-yellow-300"
-          ></Image>
+            className="object-cover rounded-[50%/60%_60%_40%_40%] bg-yellow-300 z-[11] relative w-[100%] h-[100%]"
+          />
+          <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5]  bottom-[2rem] left-[2rem] rounded-[50%/60%_60%_40%_40%]"></div>
         </div>
       </div>
     </div>

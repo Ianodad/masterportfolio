@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
           <a href="#" target="_blank" rel="noopener noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-brand-meta"
+              className="icon icon-tabler icon-tabler-brand-meta"
               width="44"
               height="44"
               viewBox="0 0 24 24"
@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
           <a href="#" target="_blank" rel="noopener noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-brand-instagram"
+              className="icon icon-tabler icon-tabler-brand-instagram"
               width="44"
               height="44"
               viewBox="0 0 24 24"
