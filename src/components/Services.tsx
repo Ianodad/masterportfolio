@@ -15,7 +15,7 @@ export const Services = () => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white">
         <div>
-          <div className="bg-gradient-to-t from-red-700 via-red-900 to-red hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold text-center p-[2rem]">
+          <div className="bg-cm-red-500 to-red hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold text-center p-[2rem]">
             <CodeBracketSquareIcon className="w-[6rem] h-[6rem] mx-auto text-[#d3fae8]" />
             <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb[1.5rem] text-purple-500">
               Frontend
@@ -26,7 +26,7 @@ export const Services = () => {
           </div>
         </div>
         <div>
-          <div className="bg-gradient-to-t from-yellow-700 via-yellow-900 to-yellow hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold text-center p-[2rem]">
+          <div className="bg-cm-yellow-500 to-yellow hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold text-center p-[2rem]">
             <CommandLineIcon className="w-[6rem] h-[6rem] mx-auto text-[#d3fae8]" />
             <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb[1.5rem] text-purple-500">
               Backend
@@ -38,7 +38,7 @@ export const Services = () => {
           </div>
         </div>
         <div>
-          <div className="bg-gradient-to-t from-blue-700 via-blue-900 to-blue hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold text-center p-[2rem]">
+          <div className="bg-cm-blue-500 to-yellow to-blue hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold text-center p-[2rem]">
             <IoInfiniteSharp className="w-[6rem] h-[6rem] mx-auto text-[#d3fae8]" />
             <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb[1.5rem] text-purple-500">
               DevOps
