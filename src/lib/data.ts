@@ -2,9 +2,13 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import dopplerdevops from "../../public/images/dopplerdevops.webp";
+import dopplerDevops from "../../public/images/dopplerdevops.webp";
 import nextPrisma from "../../public/images/next+prisma.webp";
-import wordanalyticsImg from "../../public/images/wordanalytics.png";
+import AvdGoogle from "../../public/images/Avd-gg.webp";
+import KubernetesArch from "../../public/images/k8-acrh.webp";
+import jenkinsNode from "../../public/images/jenkins+node.webp";
+import awsBeanstalk from "../../public/images/aws-Beanstalk.webp";
+import ansibleEc2 from "../../public/images/ansible-ec2.webp";
 
 export const links = [
   {
@@ -60,30 +64,6 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
-  {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-  },
-] as const;
-
 export const skillsData = [
   "HTML",
   "CSS",
@@ -106,7 +86,6 @@ export const skillsData = [
   "Framer Motion",
 ] as const;
 
-
 export const blog = [
   {
     title: "DEVOPS WITH DOPPLER (SECOPS)",
@@ -117,7 +96,7 @@ export const blog = [
     tags: ["DevOps", "Doppler", "SecOps"],
     views: 1.3,
     reads: 586,
-    imageUrl: dopplerdevops,
+    imageUrl: dopplerDevops,
   },
   {
     title: "BUILDING A MVC APPLICATION WITH NEXTJS AND PRISMA",
@@ -138,7 +117,7 @@ export const blog = [
     tags: ["Android", "React-Native"],
     views: 92,
     reads: 52,
-    imageUrl: Avd - googleg,
+    imageUrl: AvdGoogle,
   },
   {
     title: "Kubernetes Architecture",
@@ -149,7 +128,7 @@ export const blog = [
     tags: ["DevOps", "K8"],
     views: 514,
     reads: 233,
-    imageUrl: k8 - acrh,
+    imageUrl: KubernetesArch,
   },
   {
     title: "Integrating Jenkins with a Nodejs project.",
@@ -158,9 +137,9 @@ export const blog = [
       "This is how to create a jenkins build with nodeJs for automatic deployment",
     link: "https://medium.com/dev-genius/cloud-computing-b8f0736482a5",
     tags: ["DevOps", "Jenkins", "Node"],
-    iews: 13.9,
+    views: 13.9,
     reads: 8.8,
-    imageUrl: jenkins + node,
+    imageUrl: jenkinsNode,
   },
   {
     title: "CI/CD with AWS Elastic Beanstalk",
@@ -171,7 +150,7 @@ export const blog = [
     tags: ["DevOps", "AWS", "Docker"],
     views: 1.7,
     reads: 757,
-    imageUrl: corpcommentImg,
+    imageUrl: awsBeanstalk,
   },
   {
     title: "How to install Ansible 2 on AWS Linux 2 (EC2)",
@@ -181,6 +160,6 @@ export const blog = [
     tags: ["DevOps", "AWS", "Linux"],
     views: 8.3,
     reads: 5.7,
-    imageUrl: corpcommentImg,
+    imageUrl: ansibleEc2,
   },
 ] as const;
