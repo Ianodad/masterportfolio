@@ -39,28 +39,78 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Bachelor of Business Information Technology(BBIT)",
+    company: "Kenya Methodist University",
+    location: "Nairobi, Kenya",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "In my Bachelor of Business Information Technology (BBIT), I focused on blending IT skills with business knowledge, covering data management, software development, and business process understanding.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2017",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Fullstack Web Developer",
+    company: "Moringa School",
+    location: "Nairobi, Kenya",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Trained in a bootcamp, I honed full-stack development skills with tools like Git, JavaScript, Python, and databases such as PostgreSQL and MySQL, building projects using Angular, Flask, and Django.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2018",
+  },
+  {
+    title: "Full Stack Web Developer",
+    location: "remote",
+    description:
+      "Full Stack Web Developer with expertise in building functional and scalable web applications. Proficient in DevOps, cloud technologies like AWS, Digital Ocean, and frontend tools including React and React Native.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Jan 2019 - 2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Front-End Web Developer",
+    company: "Savannah Informatics",
+    location: "Nairobi, Kenya",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Developed UI interfaces for ERP  software, leveraging frontend tools such as SCSS, HTML, and Angular to ensure an efficient and user-friendly experience.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Jun 2021 - Aug 2021",
+  },
+  {
+    title: "Front-End Web Developer",
+    company: "u2i",
+    location: "Poland, Remote",
+    description:
+      "Contributed to the front-end development of 'RetroTool', a SaaS scrum tool, by integrating new features using React and MeteorJS, enhancing its functionality and user experience.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Oct 2021 - Nov 2021",
+  },
+  {
+    title: "Senior Full Stack Developer",
+    company: "YLabs",
+    location: "California, Remote",
+    description:
+      "Developing a scalable e-commerce application featuring multiple client-facing interfaces, using Next.js for the web, React Native for mobile, and Express with GraphQL for the backend.wwwww",
+    icon: React.createElement(CgWorkAlt),
+    tools: ["NextJs(ReactJs)", "GraphQl", "React-Native", "AWS"],
+    date: "Jul 2022 - Dec 2022",
+  },
+  {
+    title: "Technical Writer",
+    company: "Medium.com",
+    location: "Remote",
+    description:
+      "As a technical writer, I specialize in covering a wide range of topics from frontend development to DevOps, engaging and educating a diverse tech audience.",
+    icon: React.createElement(CgWorkAlt),
+    tools: ["NextJs(ReactJs)", "Devops"],
+    date: "Jun 2020 - Present",
+  },
+  {
+    title: "Senior Full Stack Developer",
+    company: "Metaverse Architects",
+    location: "Malta, Remote",
+    description:
+      "Developing a 3D Web3 application with CI/CD integration, deployed on GCP using Next.js, Tailwind, and Express, and connected to Github for easy deployment.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    tools: ["NextJs(ReactJs)", "Typescript", "Tailwind", "GCP", "Docker"],
+    date: "2023 - present",
   },
 ] as const;
 
