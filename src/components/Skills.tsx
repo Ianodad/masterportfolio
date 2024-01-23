@@ -27,7 +27,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className="mb-28  scroll-mt-28 items-center sm:mb-40 flex justify-center"
+      className="scroll-mt-28 items-center flex justify-center bg-white py-14"
     >
       <div className="max-w-[53rem]">
         <h1 className=" text-[28px] sm:text-[33px] md:text-[45px]  mb-[1rem] text-center   font-bold uppercase">
@@ -37,7 +37,7 @@ export default function Skills() {
           <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 justify-items-center">
             {skillsData.map((skill, index) => (
               <motion.li
-                className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+                className="bg-white borderBlack rounded-lg px-6 py-3 dark:bg-white/10 dark:text-white/80 shadow-md"
                 key={index}
                 variants={fadeInAnimationVariants}
                 initial="initial"

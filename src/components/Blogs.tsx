@@ -8,9 +8,9 @@ import { blog } from "@/lib/data";
 
 export const Blogs = () => {
   return (
-    <div className="pt-[4em] md:pt-[8rem] pb-[4rem] bg-white">
-      <h1 className="heading">
-        My <span></span>Blog
+    <section className="pt-[2em] md:pt-[4rem] pb-[4rem] bg-white">
+      <h1 className=" text-[28px] sm:text-[33px] md:text-[45px]  mb-[1rem] text-center   font-bold uppercase">
+        My <span className="text-gray-400">Blogs</span>
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mt-[4rem] gap-[3rem] w-[80%] mx-auto">
         {blog.map((item, index) => {
@@ -53,6 +53,6 @@ export const Blogs = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };

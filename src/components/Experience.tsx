@@ -17,7 +17,7 @@ export const Experience = () => {
   return (
     <section
       id="experience"
-      className="bg-white from-black via-gray-700 to-black scroll-mt-28 mb-28 sm:mb-40 items-center"
+      className="bg-white from-black via-gray-700 to-black scroll-mt-28  items-center"
     >
       {/* <SectionHeading>My experience</SectionHeading> */}
       <h1 className=" text-[28px] sm:text-[33px] md:text-[45px]  mb-[1rem] text-center   font-bold uppercase">
@@ -46,10 +46,12 @@ export const Experience = () => {
               }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
+              <p className="font-normal !mt-0">{item.company}</p>
+              <p className="!mt-0">{item.location}</p>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
+              <p className="font-normal !mt-0">{item.tools}</p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

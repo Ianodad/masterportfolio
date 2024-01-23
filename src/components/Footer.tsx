@@ -7,7 +7,7 @@ import React from "react";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-white py-2 my-3">
+    <footer className="bg-gray-800 text-white py-2 ">
       <div className="container mx-auto flex flex-col items-center">
         {/* Contact Information */}
 

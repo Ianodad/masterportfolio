@@ -2,6 +2,12 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import {
+  CodeBracketSquareIcon,
+  CommandLineIcon,
+  RocketLaunchIcon,
+} from "@heroicons/react/24/solid";
+import { IoInfiniteSharp } from "react-icons/io5";
 import dopplerDevops from "../../public/images/dopplerdevops.webp";
 import nextPrisma from "../../public/images/next+prisma.webp";
 import AvdGoogle from "../../public/images/Avd-gg.webp";
@@ -34,7 +40,31 @@ export const links = [
   {
     name: "Contact",
     hash: "#contact",
+  }
+] as const;
+
+export const myServicesData = [
+  {
+    id: 'frontend',
+    color: 'red',
+    icon: React.createElement(CodeBracketSquareIcon, {className: "w-[6rem] h-[6rem] mx-auto text-[#d3fae8]"}),
+    title: 'Frontend',
+    description: 'Proficient in HTML, CSS, JavaScript, ReactJS, NextJS.'
   },
+  {
+    id: 'backend',
+    color: 'yellow',
+    icon: React.createElement(CommandLineIcon),
+    title: 'Backend',
+    description: 'Proficient in server-side programming languages like Python, Golang, or Node.js.'
+  },
+  {
+    id: 'devops',
+    color: 'blue',
+    icon: React.createElement(IoInfiniteSharp),
+    title: 'DevOps',
+    description: 'Proficient in devops and experience creating and managing cloud platforms such as AWS, GCP, and Azure.'
+  }
 ] as const;
 
 export const experiencesData = [
@@ -58,10 +88,12 @@ export const experiencesData = [
   },
   {
     title: "Full Stack Web Developer",
-    location: "remote",
+    company: "Self Employeed",
+    location: "Remote",
     description:
       "Full Stack Web Developer with expertise in building functional and scalable web applications. Proficient in DevOps, cloud technologies like AWS, Digital Ocean, and frontend tools including React and React Native.",
     icon: React.createElement(CgWorkAlt),
+    tools: "React, React-Native, Docker, AWS, Python, Golang, PHP, Vue",
     date: "Jan 2019 - 2022",
   },
   {
@@ -71,6 +103,7 @@ export const experiencesData = [
     description:
       "Developed UI interfaces for ERP  software, leveraging frontend tools such as SCSS, HTML, and Angular to ensure an efficient and user-friendly experience.",
     icon: React.createElement(CgWorkAlt),
+    tools: "Angular, SCSS, Docker git HTML",
     date: "Jun 2021 - Aug 2021",
   },
   {
@@ -80,6 +113,7 @@ export const experiencesData = [
     description:
       "Contributed to the front-end development of 'RetroTool', a SaaS scrum tool, by integrating new features using React and MeteorJS, enhancing its functionality and user experience.",
     icon: React.createElement(CgWorkAlt),
+    tools: "ReactJs, SCSS, Meteor js, Express",
     date: "Oct 2021 - Nov 2021",
   },
   {
@@ -87,9 +121,9 @@ export const experiencesData = [
     company: "YLabs",
     location: "California, Remote",
     description:
-      "Developing a scalable e-commerce application featuring multiple client-facing interfaces, using Next.js for the web, React Native for mobile, and Express with GraphQL for the backend.wwwww",
+      "Developing a scalable e-commerce application featuring multiple client-facing interfaces, using Next.js for the web, React Native for mobile, and Express with GraphQL for the backend.",
     icon: React.createElement(CgWorkAlt),
-    tools: ["NextJs(ReactJs)", "GraphQl", "React-Native", "AWS"],
+    tools: "NextJs(ReactJs), GraphQl React-Native, AWS",
     date: "Jul 2022 - Dec 2022",
   },
   {
@@ -99,7 +133,7 @@ export const experiencesData = [
     description:
       "As a technical writer, I specialize in covering a wide range of topics from frontend development to DevOps, engaging and educating a diverse tech audience.",
     icon: React.createElement(CgWorkAlt),
-    tools: ["NextJs(ReactJs)", "Devops"],
+    tools: "NextJs(ReactJs), Devops",
     date: "Jun 2020 - Present",
   },
   {
@@ -109,7 +143,7 @@ export const experiencesData = [
     description:
       "Developing a 3D Web3 application with CI/CD integration, deployed on GCP using Next.js, Tailwind, and Express, and connected to Github for easy deployment.",
     icon: React.createElement(FaReact),
-    tools: ["NextJs(ReactJs)", "Typescript", "Tailwind", "GCP", "Docker"],
+    tools: "NextJs(ReactJs), Typescript, Tailwind, GCP, Docker",
     date: "2023 - present",
   },
 ] as const;
@@ -141,7 +175,7 @@ export const blog = [
     title: "DEVOPS WITH DOPPLER (SECOPS)",
     date: "January 4, 2024",
     description:
-      "Doppler is a great SecOps tool for manageming Keys across multiple Servece on teh cloud",
+      "Doppler is a great SecOps tool for managing Keys across multiple Service on teh cloud",
     link: "https://medium.com/@ianodad/devops-with-doppler-d12bdf78df84",
     tags: ["DevOps", "Doppler", "SecOps"],
     views: 1.3,
@@ -162,7 +196,7 @@ export const blog = [
     title: "HOW TO ADD GOOGLE SERVICES ON AN AVD EMULATOR DEVICE",
     date: "Apr 19, 2022",
     description:
-      "Step by step to adding google servces on an system image on android studio",
+      "Step by step to adding google services on an system image on android studio",
     link: "https://medium.com/@ianodad/how-to-add-google-services-on-an-avd-emulator-device-f6bffc1da144",
     tags: ["Android", "React-Native"],
     views: 92,
