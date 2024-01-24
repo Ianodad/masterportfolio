@@ -40,31 +40,40 @@ export const links = [
   {
     name: "Contact",
     hash: "#contact",
-  }
+  },
 ] as const;
+
+export const iconServicesComponents = {
+  CodeBracketSquareIcon: CodeBracketSquareIcon,
+  CommandLineIcon: CommandLineIcon,
+  IoInfiniteSharp: IoInfiniteSharp,
+  // ... map other icon names to their components
+} as const;
 
 export const myServicesData = [
   {
-    id: 'frontend',
-    color: 'red',
-    icon: React.createElement(CodeBracketSquareIcon, {className: "w-[6rem] h-[6rem] mx-auto text-[#d3fae8]"}),
-    title: 'Frontend',
-    description: 'Proficient in HTML, CSS, JavaScript, ReactJS, NextJS.'
+    id: "frontend",
+    color: "#EF4444",
+    icon: CodeBracketSquareIcon,
+    title: "Frontend",
+    description: "Proficient in HTML, CSS, JavaScript, ReactJS, NextJS.",
   },
   {
-    id: 'backend',
-    color: 'yellow',
-    icon: React.createElement(CommandLineIcon),
-    title: 'Backend',
-    description: 'Proficient in server-side programming languages like Python, Golang, or Node.js.'
+    id: "backend",
+    color: "#F3C623",
+    icon: CommandLineIcon,
+    title: "Backend",
+    description:
+      "Proficient in server-side programming languages like Python, Golang, or Node.js.",
   },
   {
-    id: 'devops',
-    color: 'blue',
-    icon: React.createElement(IoInfiniteSharp),
-    title: 'DevOps',
-    description: 'Proficient in devops and experience creating and managing cloud platforms such as AWS, GCP, and Azure.'
-  }
+    id: "devops",
+    color: "#34568B",
+    icon: IoInfiniteSharp,
+    title: "DevOps",
+    description:
+      "Proficient in devops and experience creating and managing cloud platforms such as AWS, GCP, and Azure.",
+  },
 ] as const;
 
 export const experiencesData = [
