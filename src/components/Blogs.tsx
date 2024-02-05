@@ -25,17 +25,20 @@ export const Blogs = () => {
             imageUrl,
           } = item;
           return (
-            <div className="blog-card" key={index}>
-              <div className="w-[100%] relative h-[400px]">
+            <div
+              className="blog-card rounded-lg shadow-lg shadow-cm-grey hover:visible"
+              key={index}
+            >
+              <div className="w-[100%] relative h-[400px] rounded-lg">
                 <Image
                   src={imageUrl}
                   alt="blog"
                   layout="fill"
-                  className="object-cover"
+                  className="object-cover rounded-lg"
                 />
               </div>
-              <div className=" text-center mx-auto bg-[#09101a] relative p-[2rem] mt-[-1rem]">
-                <div className="w-fit px-[2rem] py-[1rem] bg-[#e7f3ee] relative mt-[-3rem] text-black font-semibold text-[17px] mx-auto">
+              <div className=" text-center mx-auto bg-[#09101a] relative p-[2rem] mt-[-1rem] rounded-b-lg hover:visible border-t-2 border-white-500">
+                <div className="w-fit px-[2rem] py-[1rem] bg-[#e7f3ee] relative mt-[-3rem] text-black font-semibold text-[17px] mx-auto rounded-lg">
                   {date}
                 </div>
                 <div className="flex flex-col md:flex-row items-center mt-[1rem] space-x-4">
