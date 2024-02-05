@@ -29,9 +29,9 @@ export const About = () => {
             src="/images/aboutt.png"
             alt="user"
             layout="fill"
-            className="object-cover rounded-[50%/60%_60%_40%_40%] bg-yellow-300 z-[11] relative w-[100%] h-[100%]"
+            className="object-cover rounded-full bg-yellow-300 z-[11] relative w-[100%] h-[100%]"
           />
-          <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5]  bottom-[2rem] left-[2rem] rounded-[50%/60%_60%_40%_40%]"></div>
+          <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5]  bottom-[2rem] left-[2rem] rounded-full"></div>
         </div>
       </div>
     </div>

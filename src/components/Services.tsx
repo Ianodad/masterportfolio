@@ -27,7 +27,7 @@ export const Services = () => {
           <div key={service.id}>
             <div
               style={{ backgroundColor: service.color }}
-              className={`bg-[${service.color}]-500 to-${service.color} hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold text-center p-[2rem]`}
+              className={`bg-[${service.color}]-500 to-${service.color} shadow-md shadow-grey rounded-lg hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold text-center p-[2rem]`}
             >
               {React.createElement(service.icon, {
                 className: "w-[6rem] h-[6rem] mx-auto text-[#d3fae8]",

@@ -35,7 +35,7 @@ export const Blogs = () => {
                 />
               </div>
               <div className=" text-center mx-auto bg-[#09101a] relative p-[2rem] mt-[-1rem]">
-                <div className="w-fit px-[2rem] py-[1rem] bg-[#55e6a5] relative mt-[-3rem] text-black font-semibold text-[17px] mx-auto">
+                <div className="w-fit px-[2rem] py-[1rem] bg-[#e7f3ee] relative mt-[-3rem] text-black font-semibold text-[17px] mx-auto">
                   {date}
                 </div>
                 <div className="flex flex-col md:flex-row items-center mt-[1rem] space-x-4">
