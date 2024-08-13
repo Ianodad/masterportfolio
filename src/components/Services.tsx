@@ -8,7 +8,8 @@ import { myServicesData } from "@/lib/data";
 
 import React from "react";
 import cx from "classnames";
-
+import { useSectionInView } from "@/hooks";
+import { motion } from "framer-motion";
 // const iconServicesComponents = {
 //   codeBracketSquareIcon: CodeBracketSquareIcon,
 //   commandLineIcon: CommandLineIcon,
@@ -17,8 +18,13 @@ import cx from "classnames";
 // };
 
 export const Services = () => {
+  const { ref } = useSectionInView("Services", 0.8);
   return (
-    <div className="bg-slate-50 pt-[4rem] md:pt-[8rem] pb-[5rem]">
+    <motion.section
+      id="services"
+      ref={ref}
+      className="bg-slate-50 pt-[10rem] md:pt-[8rem] pb-[5rem]"
+    >
       <p className="text-center text-black text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase">
         My <span className="text-gray-400">Services</span>
       </p>
@@ -42,6 +48,6 @@ export const Services = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.section>
   );
 };

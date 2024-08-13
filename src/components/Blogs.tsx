@@ -5,10 +5,17 @@ import {
 import Image from "next/image";
 import React from "react";
 import { blog } from "@/lib/data";
+import { motion } from "framer-motion";
+import { useSectionInView } from "@/hooks";
 
 export const Blogs = () => {
+  const { ref } = useSectionInView("Blogs");
   return (
-    <section className="pt-[2em] md:pt-[4rem] pb-[4rem] bg-white">
+    <motion.section
+      className="pt-[8em] md:pt-[4rem] pb-[4rem] bg-white"
+      ref={ref}
+      id="blogs"
+    >
       <h1 className=" text-[28px] sm:text-[33px] md:text-[45px]  mb-[1rem] text-center   font-bold uppercase">
         My <span className="text-gray-400">Blogs</span>
       </h1>
@@ -56,6 +63,6 @@ export const Blogs = () => {
           );
         })}
       </div>
-    </section>
+    </motion.section>
   );
 };

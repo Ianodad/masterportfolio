@@ -23,7 +23,7 @@ export default function Home() {
       <Navbar openNav={openNav} />
       <MobileNavbar nav={nav} closeNav={closeNav} />
       <Hero />
-      <div className="relative z-[30]">
+      <div className="relative z-[30] mt-20">
         <About />
         <Services />
         <Skills />

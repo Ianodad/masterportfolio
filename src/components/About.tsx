@@ -1,9 +1,18 @@
+import { useSectionInView } from "@/hooks";
 import Image from "next/image";
 import React from "react";
-
+import { motion, useScroll, useTransform } from "framer-motion";
 export const About = () => {
+  const { ref } = useSectionInView("About", 0.4);
   return (
-    <div className="bg-white from-black via-gray-700 to-black pb-[3rem] pt-[4rem] md:pt-[8rem]">
+    <motion.section
+      ref={ref}
+      id="about"
+      className="bg-white from-black via-gray-700 to-black pb-[3rem] pt-[10rem] md:pt-[10rem]"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
         <div>
           <h1 className="text-[20px] font-bold uppercase  mb-[1rem]">
@@ -33,7 +42,8 @@ export const About = () => {
           />
           <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5]  bottom-[2rem] left-[2rem] rounded-full"></div>
         </div>
+        /
       </div>
-    </div>
+    </motion.section>
   );
 };

@@ -16,31 +16,15 @@ import jenkinsNode from "../../public/images/jenkins+node.webp";
 import awsBeanstalk from "../../public/images/aws-Beanstalk.webp";
 import ansibleEc2 from "../../public/images/ansible-ec2.webp";
 
-export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+export const navLinks = [
+  { href: "#home", text: "Home", section: "Home" },
+  { href: "#about", text: "About", section: "About" },
+  { href: "#services", text: "Services", section: "Services" },
+  // { href: "#projects", text: "Projects", section: "Projects" },
+  { href: "#skills", text: "Skills", section: "Skills" },
+  { href: "#experience", text: "Experience", section: "Experience" },
+  { href: "#blogs", text: "Blogs", section: "Blogs" },
+  { href: "#contact", text: "Contact", section: "Contact" },
 ] as const;
 
 export const iconServicesComponents = {

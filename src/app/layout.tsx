@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import cx from "classnames";
+import ActiveSectionContextProvider from "@/context/active-section-context";
+import ThemeContextProvider from "@/context/theme-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,10 +19,14 @@ export default function RootLayout({
 }) {
   const combinedClassName = cx(inter.className, "font-sans", "bg-gray-50");
   return (
-    <html lang="en">
-      <>
-        <body className={combinedClassName}>{children}</body>
-      </>
+    <html lang="en" className="!scroll-smooth">
+      <body>
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <body className={combinedClassName}>{children}</body>
+          </ActiveSectionContextProvider>
+        </ThemeContextProvider>
+      </body>
     </html>
   );
 }

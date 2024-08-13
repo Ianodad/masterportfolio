@@ -1,23 +1,36 @@
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import { navLinks } from "@/lib/data";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import Link from "next/link";
+
 interface Props {
   nav: boolean;
   closeNav: () => void;
 }
 
 export const MobileNavbar = ({ nav, closeNav }: Props) => {
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
   const navAnimation = nav ? "translate-x-0" : "translate-x-[-100%]";
   return (
     <div
-      className={`fixed ${navAnimation} transform transition-all duration-300 top-0 right-0 left-0 bottom-0 z-[1000000] bg-[#09101a] `}
+      className={`fixed ${navAnimation} transform transition-all duration-300 top-0 right-0 bg-[#fefeff] left-0 bottom-0 z-[10000000] bg-[#09101a] `}
     >
       <div className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
-        <div className="nav-link-mobile">Home</div>
-        <div className="nav-link-mobile">Services</div>
-        <div className="nav-link-mobile">About</div>
-        <div className="nav-link-mobile">Project</div>
-        <div className="nav-link-mobile">Blog</div>
-        <div className="nav-link-mobile">Contact</div>
+        {navLinks.map((link, index) => (
+          <Link
+            key={index}
+            href={link.href}
+            className="nav-link-mobile"
+            onClick={() => {
+              setActiveSection(link.section);
+              closeNav(); // Assuming you have a function to close the mobile nav
+            }}
+          >
+            {link.text}
+          </Link>
+        ))}
       </div>
       <div
         onClick={closeNav}

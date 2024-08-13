@@ -21,13 +21,13 @@ const fadeInAnimationVariants = {
 };
 
 export default function Skills() {
-  const { ref } = useSectionInView("Skills");
+  const { ref } = useSectionInView("skills");
 
   return (
     <section
       id="skills"
       ref={ref}
-      className="scroll-mt-28 items-center flex justify-center bg-white py-14"
+      className="scroll-mt-28 items-center py-2 flex justify-center bg-white md:py-14"
     >
       <div className="max-w-[53rem]">
         <h1 className=" text-[28px] sm:text-[33px] md:text-[45px]  mb-[1rem] text-center   font-bold uppercase">

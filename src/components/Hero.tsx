@@ -8,12 +8,18 @@ import { BsLinkedin } from "react-icons/bs";
 
 import { FaGithubSquare } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
+import { useSectionInView } from "@/hooks";
 
 import { motion } from "framer-motion";
 
 export const Hero = () => {
+  const { ref } = useSectionInView("Home", 0.4);
   return (
-    <div className="h-[90vh] mt-[10vh] bg-cover bg-center filter">
+    <motion.section
+      ref={ref}
+      id="home"
+      className="h-[90vh] mt-[4vh] bg-cover bg-center filter"
+    >
       <Particle />
       <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap[3rem] h-[100%] items-center">
         <div>
@@ -95,6 +101,6 @@ export const Hero = () => {
           ></Image>
         </div>
       </div>
-    </div>
+    </motion.section>
   );
 };

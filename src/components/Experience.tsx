@@ -9,15 +9,17 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "../hooks";
+import { motion } from "framer-motion";
 // import { useTheme } from "@/context/theme-context";
 
 export const Experience = () => {
-  // const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Experience");
   // const { theme } = useTheme();
   return (
-    <section
+    <motion.section
+      ref={ref}
       id="experience"
-      className="bg-white from-black via-gray-700 to-black scroll-mt-28  items-center"
+      className="bg-white from-black via-gray-700 to-black scroll-mt-10 pt-[7rem] items-center "
     >
       {/* <SectionHeading>My experience</SectionHeading> */}
       <h1 className=" text-[28px] sm:text-[33px] md:text-[45px]  mb-[1rem] text-center   font-bold uppercase">
@@ -56,6 +58,6 @@ export const Experience = () => {
           </React.Fragment>
         ))}
       </VerticalTimeline>
-    </section>
+    </motion.section>
   );
 };
