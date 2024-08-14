@@ -18,7 +18,7 @@ export const Hero = () => {
     <motion.section
       ref={ref}
       id="home"
-      className="h-[90vh] mt-[4vh] bg-cover bg-center filter"
+      className="h-[90vh] mt-[4vh] bg-cover bg-center filter dark:bg-[#1A1A1A]"
     >
       <Particle />
       <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap[3rem] h-[100%] items-center">

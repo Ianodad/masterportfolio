@@ -81,7 +81,7 @@ export const experiencesData = [
   },
   {
     title: "Full Stack Web Developer",
-    company: "Self Employeed",
+    company: "Self Employed",
     location: "Remote",
     description:
       "Full Stack Web Developer with expertise in building functional and scalable web applications. Proficient in DevOps, cloud technologies like AWS, Digital Ocean, and frontend tools including React and React Native.",

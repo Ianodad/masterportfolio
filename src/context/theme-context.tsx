@@ -26,6 +26,7 @@ export default function ThemeContextProvider({
       window.localStorage.setItem("theme", "dark");
       document.documentElement.classList.add("dark");
     } else {
+      console.log("Hit hit", theme);
       setTheme("light");
       window.localStorage.setItem("theme", "light");
       document.documentElement.classList.remove("dark");

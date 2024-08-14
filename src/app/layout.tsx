@@ -17,7 +17,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const combinedClassName = cx(inter.className, "font-sans", "bg-gray-50");
+  const combinedClassName = cx(
+    inter.className,
+    "font-sans",
+    "bg-gray-50 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90"
+  );
   return (
     <html lang="en" className="!scroll-smooth">
       <body>
