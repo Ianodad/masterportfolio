@@ -23,10 +23,10 @@ export const Services = () => {
     <motion.section
       id="services"
       ref={ref}
-      className="bg-slate-50 pt-[10rem] md:pt-[8rem] pb-[5rem]"
+      className="bg-slate-50 pt-[10rem] md:pt-[8rem] pb-[5rem] dark:bg-cm-blue-900"
     >
-      <p className="text-center text-black text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase">
-        My <span className="text-gray-400">Services</span>
+      <p className="text-center text-black dark:text-cm-blue-50 text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase">
+        My <span className="text-cm-grey-500">Services</span>
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white">
         {myServicesData.map((service) => (

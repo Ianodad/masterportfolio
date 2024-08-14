@@ -12,7 +12,7 @@ export const Blogs = () => {
   const { ref } = useSectionInView("Blogs");
   return (
     <motion.section
-      className="pt-[8em] md:pt-[4rem] pb-[4rem] bg-white"
+      className="pt-[8em] md:pt-[4rem] pb-[4rem] bg-white dark:bg-cm-blue-950"
       ref={ref}
       id="blogs"
     >

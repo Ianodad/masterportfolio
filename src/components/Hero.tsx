@@ -18,7 +18,7 @@ export const Hero = () => {
     <motion.section
       ref={ref}
       id="home"
-      className="h-[90vh] mt-[4vh] bg-cover bg-center filter dark:bg-[#1A1A1A]"
+      className="h-[90vh] pt-[4vh] bg-cover bg-center filter dark:bg-cm-blue-900"
     >
       <Particle />
       <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap[3rem] h-[100%] items-center">
@@ -50,8 +50,8 @@ export const Hero = () => {
             <span className="font-bold">Node(ExpressJs)</span>.
           </motion.p>
           <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
-            <button className="px-[2rem] hover:bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-cm-blue-700 via-cm-blue-500 to-cm-blue-700 transition-all duration-300 py-[1rem] text-[18px] font-bold uppercase bg-cm-blue-500 text-black flex items-center space-x-2 border rounded-full">
-              <a href="/documents/Ian-adera-cv.pdf" download>
+            <button className="px-[2rem] hover:bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-cm-blue-700 via-cm-blue-500 to-cm-blue-700 transition-all duration-300 py-[1rem] text-[18px] font-bold uppercase bg-cm-blue-500 dark:bg-cm-blue-50 text-black flex items-center space-x-2 border rounded-full">
+              <a href="/documents/Ian_Adera_Resume_Fullstack.pdf" download>
                 <p>Download cv</p>
               </a>
               <ArrowDownCircleIcon className="w-[1.6rem] h-[1.7rem] text-black" />
@@ -65,7 +65,7 @@ export const Hero = () => {
               }}
             >
               <a
-                className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                className="bg-cm-light-grey-100 p-4 text-cm-blue-900 hover:text-cm-blue-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-cm-light-grey-50"
                 href="https://www.linkedin.com/in/ian-odhiambo/"
                 target="_blank"
               >
@@ -73,14 +73,14 @@ export const Hero = () => {
               </a>
 
               <a
-                className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                className="bg-cm-light-grey-100 p-4 text-cm-blue-900 hover:text-cm-blue-950 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-cm-light-grey-50"
                 href="https://github.com/Ianodad"
                 target="_blank"
               >
                 <FaGithubSquare />
               </a>
               <a
-                className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                className="bg-cm-light-grey-100 p-4 text-cm-blue-900 hover:text-cm-blue-950 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-cm-light-grey-50"
                 href="https://medium.com/@ianodad"
                 target="_blank"
               >
