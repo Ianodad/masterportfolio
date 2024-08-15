@@ -25,7 +25,6 @@ export const Experience = () => {
       id="experience"
       className="bg-slate-50 from-black via-gray-700 to-black scroll-mt-10 pt-[7rem] items-center dark:bg-cm-blue-900"
     >
-      {/* <SectionHeading>My experience</SectionHeading> */}
       <h1 className=" text-[28px] sm:text-[33px] md:text-[45px]  mb-[1rem] text-center   font-bold uppercase">
         My <span className="text-gray-400">Experience</span>
       </h1>
@@ -62,7 +61,7 @@ export const Experience = () => {
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
-              {/* <p className="font-normal !mt-0">{item.tools}</p> */}
+              <p className="font-normal !mt-0">{item.tools}</p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

@@ -19,18 +19,18 @@ const fadeInAnimationVariants = {
   }),
 };
 
-export default function Skills() {
+export const Skills = () => {
   const { ref } = useSectionInView("Skills");
 
   return (
-    <section
+    <motion.section
       id="skills"
       ref={ref}
       className="scroll-mt-28 items-center py-2 flex justify-center bg-white dark:bg-cm-blue-950 md:py-14"
     >
       <div className="max-w-[53rem]">
         <h1 className=" text-[28px] sm:text-[33px] md:text-[45px]  mb-[1rem] text-center font-bold uppercase">
-          My skills
+          My <span className="text-gray-400">Skills</span>
         </h1>
         <div>
           <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 justify-items-center">
@@ -52,6 +52,6 @@ export default function Skills() {
           </ul>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
-}
+};

@@ -11,7 +11,7 @@ import { Experience } from "@/components/Experience";
 import { Projects } from "@/components/project";
 import { Blogs } from "@/components/Blogs";
 import { Footer } from "@/components/Footer";
-import Skills from "@/components/Skills";
+import { Skills } from "@/components/Skills";
 
 export default function Home() {
   const [nav, setNav] = useState(false);

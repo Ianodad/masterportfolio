@@ -8,18 +8,18 @@ export const About = () => {
     <motion.section
       ref={ref}
       id="about"
-      className="bg-white dark:bg-cm-blue-950 pb-[3rem] pt-[10rem] md:pt-[10rem]"
+      className="bg-white dark:bg-cm-blue-950 pb-[3rem] pt-[3rem] md:pt-[2rem]"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
     >
+      <h1 className="text-center text-black dark:text-cm-blue-50 text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase pb-[5rem]">
+        About <span className="text-gray-400">Me</span>
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
-        <div>
-          <h1 className="text-[20px] font-bold uppercase mb-[1rem] text-cm-blue-950 dark:text-cm-blue-50">
-            About Me
-          </h1>
+        <div className="pt-[5rem]">
           <h2 className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize mb-[3rem] font-bold text-cm-blue-950 dark:text-cm-blue-50">
-            Transforming <span className="text-cm-red-500">Visions</span>
+            Imagination <span className="text-cm-red-500">Redefined</span>
           </h2>
           <div className="mb-[3rem] flex items-center md:space-x-10 ">
             <span className="w-[100px] hidden md:block h-[5px] bg-cm-blue-950 dark:text-cm-blue-50 rounded-sm"></span>
