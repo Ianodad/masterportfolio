@@ -8,7 +8,7 @@ export const About = () => {
     <motion.section
       ref={ref}
       id="about"
-      className="bg-white dark:bg-cm-blue-950 pb-[3rem] pt-[3rem] md:pt-[2rem]"
+      className="bg-white dark:bg-cm-blue-950 pb-[3rem] pt-[3rem] md:pt-[3rem]"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -24,12 +24,14 @@ export const About = () => {
           <div className="mb-[3rem] flex items-center md:space-x-10 ">
             <span className="w-[100px] hidden md:block h-[5px] bg-cm-blue-950 dark:text-cm-blue-50 rounded-sm"></span>
             <p className="text-[19px] text-cm-blue-950 dark:text-cm-blue-50">
-              Transitioning from vision to web development involves translating
-              conceptual ideas into tangible digital experiences. This process
-              integrates design elements, user interfaces, and functionality to
-              create engaging websites. Collaboration between designers and
-              developers ensures the realization of the initial vision,
-              delivering a seamless and interactive online presence
+              As a full-stack developer, I blend creativity and technical
+              expertise to bring your ideas to life. I design and build
+              user-centered applications that are both functional and visually
+              captivating. With deep front-end and back-end knowledge, I deliver
+              seamless solutions tailored to your needs. Driven by a passion for
+              problem-solving, I explore new possibilities to create digital
+              experiences that leave a lasting impression. Let&apos;s turn your
+              imagination into reality.
             </p>
           </div>
         </div>
