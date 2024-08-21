@@ -4,6 +4,7 @@ import "./globals.css";
 import cx from "classnames";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import ThemeContextProvider from "@/context/theme-context";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body>
+        <Analytics mode={"production"} />
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <body className={combinedClassName}>{children}</body>
